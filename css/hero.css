@@ -1,0 +1,93 @@
+.hero {
+  background:url(../images/sprites/hero/dying.png);
+  background:url(../images/sprites/hero/punch.png);
+  background:url(../images/sprites/hero/hero.png);
+  background-position: -562px -6px;
+  width: 48px;
+  height: 90px;
+}
+
+.idle {
+  background:url(../images/sprites/hero/hero.png);
+  background-position: -562px -6px;
+  width: 48px;
+  height: 90px;
+  animation: idle .5s steps(4) infinite;
+}
+
+@keyframes idle {
+  0% {
+    background-position: -562px -6px;
+  }
+  100% {
+    background-position: -752px -6px
+  }
+}
+
+.walk {
+  background:url(../images/sprites/hero/hero.png);
+  background-position: -195px -6px;
+  width: 48px;
+  height: 90px;
+  animation: walk .8s steps(6) infinite;
+}
+
+@keyframes walk {
+  0% {
+    background-position: -195px -6px;
+  }
+  100% {
+    background-position: -483px -6px
+  }
+}
+
+.kicked {
+  background:url(../images/sprites/hero/hero.png);
+  background-position: -592px -1339px;
+  width: 49px;
+  height: 80px;
+  animation: kicked 1s steps(3) infinite;
+}
+
+@keyframes kicked {
+  0% {
+    background-position: -592px -1339px;
+  }
+  100% {
+    background-position: -752px -1339px
+  }
+}
+
+.dying {
+  background:url(../images/sprites/hero/dying.png);
+  background-position: -264px 0px;
+  width: 88px;
+  height: 51px;
+  animation: dying 1.5s steps(3) infinite;
+}
+
+@keyframes dying {
+  0% {
+    background-position: -264px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+.punch {
+  background:url(../images/sprites/hero/punch.png);
+  background-position: 0px -90px;
+  width: 70px;
+  height: 90px;
+  animation: punch 0.2s steps(3) infinite alternate;
+}
+
+@keyframes punch {
+  0% {
+    background-position: -0px -90px;
+  }
+  100% {
+    background-position: -210px -90px;
+  }
+}

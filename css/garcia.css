@@ -1,0 +1,25 @@
+.garcia {
+  background:url(../images/garcia.png);
+  background-repeat: no-repeat;
+  background-position: -288px 0px;
+  width: 60px;
+  height: 75px;
+
+  position: relative;
+}
+
+.garcia_idle {
+  background-position: -288px 0px;
+  width: 60px;
+  height: 75px;
+  animation: garcia_idle 3s steps(3) infinite alternate;
+}
+
+@keyframes garcia_idle {
+  0% {
+    background-position: -288px 0px;
+  }
+  100% {
+    background-position: -468px 0px
+  }
+}

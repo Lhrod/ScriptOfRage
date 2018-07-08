@@ -1,0 +1,108 @@
+/*@import url("https://use.fontawesome.com/releases/v5.1.0/css/all.css");*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /*animation: transitionImage 4s ease-in forwards;/**/
+  animation: transitionImage 0s ease-in forwards;/**/
+}
+
+@keyframes transitionImage {
+  0% {background: black url(../images/ScriptOfRage.jpg) no-repeat center top;}
+  75% { background-position: center 75%; opacity: 0.25;}
+  98% {background: black url(../images/ScriptOfRage.jpg) no-repeat center bottom; opacity: 0;}
+  99% {background: black url(../images/body_background.png) no-repeat center bottom; opacity: 0;}
+  100% {background: url(../images/body_background.png) repeat; opacity: 1;}
+}
+
+.hidden {
+  display: none;
+}
+
+.scroll {
+  position: relative;
+  width: 320px;
+}
+
+.sprite {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-repeat: no-repeat;
+}
+
+.LeftOrientation {
+  transform: scaleX(-1);
+}
+
+.Blink {
+  animation: blink 4s ease-in infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0.25;
+  }
+  66% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.border {
+  border: 1px solid black;
+}
+
+#help {
+  color: grey;
+  position: fixed;
+  bottom: 20%;
+  right: center;
+}
+
+#scene {
+  background-color: #00230b;
+  width: 320px;
+  height: 224px;
+}
+
+#layer0 {
+    background: url(../images/background00Sprite.png) repeat-X;
+    /*background-position: 1px 0px;/**/
+    height: 72px;
+    top:  47px;
+    left: 0px;
+    /* animation: scroller 70s linear forwards; */
+}
+
+#layer1 {
+    background: url(../images/background01.png);
+    height: 224px;
+    /*background-position: 1px 0px;/**/
+    top:  -47px;
+    left: 0px;
+    /* animation: scroller 25s linear forwards; */
+}
+
+#layer2 {
+    background: url(../images/background02Sprite.png) repeat-X;
+    /*background-position: 0px 0px;/**/
+    height: 32px;
+    top:  192px;
+    /*top:  160px;*/
+    left: 0px;
+    /* animation: scroller 23s linear forwards; */
+}
+
+/*
+@keyframes scroller {
+    0% { background-position: 2178px }
+    100% { background-position: 320px }
+}*/
