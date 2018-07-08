@@ -5,8 +5,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  /*animation: transitionImage 4s ease-in forwards;/**/
-  animation: transitionImage 0s ease-in forwards;/**/
+  animation: transitionImage 4s ease-in forwards;/**/
+  /*animation: transitionImage 0s ease-in forwards;/**/
 }
 
 @keyframes transitionImage {
