@@ -18,7 +18,7 @@ var soundEffect = {
 
 window.addEventListener('load', function ()
 {
-  /*setTimeout(function () {
+  setTimeout(function () {
     general.classList.remove('hidden');
     window.addEventListener('keydown', keyDown);
     window.addEventListener('keyup', keyUp);
@@ -28,7 +28,7 @@ window.addEventListener('load', function ()
     music.loop = true;
     music.play();
   }, 4000);/**/
-  general.classList.remove('hidden');
+  /*general.classList.remove('hidden');
   window.addEventListener('keydown', keyDown);
   window.addEventListener('keyup', keyUp);
 
